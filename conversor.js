@@ -1,4 +1,4 @@
-const btc = 349767.80
+const btc = 364148.54
 var inputMoeda = prompt("Insira o valor a ser convertido:")
 inputMoeda = parseFloat(inputMoeda)
 
