@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
     <title>CryptoConverter</title>
-
-    <style>
-        body {
-            background-color: gold;
-            color: black;
-            font: normal 20pt arial;
-        }
-    </style>
 
 </head>
 
 <body>
 
-    <div> 
-    <hgroup>
-    <h1>Ola, Mundo!</h1>
-    <hr>
-    <img src="imagens/bitcoin.png" alt="Imagem do Bitcoin"><h1>Bem vindo ao CryptoConverter</h1><img src="imagens/brasil.png" alt="Imagem do Brasil">
-    </hgroup>   
-    <h3>Insira o valor desjado (BRL):</h3>
-    <input type="number" min="0" step="0.01" placeholder="Digite o valor em Reais:" />
-    <p><button type="submit" class="btn-app">Converter para Bitcoin</button></p>
-    </div>
-    <div class="content-result">
-        <p>
-            <h3>Resultado (BTC):</h3>
-            <br><span id="result"></span>
-        </p>
-    </div>
-    <img src="imagens/interrogacao.png" alt="Dúvida">
+    <div id="app" class="app">
 
+        <div class="dados"> 
+            <h1>Ola, Mundo!</h1>
+                <div classe="abertura">
+                    <img class="brasil" src="imagens/brasil.png" alt="Imagem do Brasil">
+                    <h1 class="titulo">Bem vindo ao CryptoConverter</h1>
+                    <img class="bitcoin" src="imagens/bitcoin.png" alt="Imagem do Bitcoin">
+                </div>  
+            <h2>Insira o valor desjado (BRL):</h2>
+            <form>
+                <input class="valor" type="number" min="0" step="0.01" placeholder="Digite o valor em Reais:" id=inputMoeda />
+                 <p><button type="submit" class="converter">Converter</button></p>
+            </form>
+
+        <div class="valorConvertido">
+            <h3>Resultado (BTC):</h3><br>
+            <span id="resultado"></span>
+        </div>
+
+    </div>
+
+    <script src="conversor.js"></script>
 </body>
 
 </html>
