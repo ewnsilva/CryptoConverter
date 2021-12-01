@@ -1,6 +1,13 @@
-const btc = 364148.54
-var inputMoeda = prompt("Insira o valor a ser convertido:")
-inputMoeda = parseFloat(inputMoeda)
+window.onload = cryptoConverter()
+    cliqueBotao();
 
-var valorConvertido = inputMoeda / btc
-console.log("Valor convertido:" + valorConvertido)
+const btc = 364148.54;
+
+var inputMoeda = document.getElementById("inputMoeda").innerHTML;
+    inputMoeda = parseFloat(inputMoeda);
+
+function obtendoResultado ()
+{
+    var resultado = inputMoeda / btc;
+    document.getElementById("resultado").innerHTML
+}
