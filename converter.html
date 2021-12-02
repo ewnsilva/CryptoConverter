@@ -13,25 +13,22 @@
 
 <body>
 
-    <div id="app" class="app">
+    <div id="cryptoConverter">
 
-        <div class="dados"> 
+        <div id="dados"> 
             <h1>Ola, Mundo!</h1>
-                <div classe="abertura">
-                    <img class="brasil" src="imagens/brasil.png" alt="Imagem do Brasil">
-                    <h1 class="titulo">Bem vindo ao CryptoConverter</h1>
-                    <img class="bitcoin" src="imagens/bitcoin.png" alt="Imagem do Bitcoin">
-                </div>  
+            <div id="abertura">
+                <img id="brasil" src="imagens/brasil.png" alt="Imagem do Brasil">
+                <h1 id="titulo">Bem vindo ao CryptoConverter</h1>
+                <img id="bitcoin" src="imagens/bitcoin.png" alt="Imagem do Bitcoin">
+            </div>  
             <h2>Insira o valor desjado (BRL):</h2>
-            <form>
-                <input class="valor" type="number" min="0" step="0.01" placeholder="Digite o valor em Reais:" id=inputMoeda />
-                 <p><button type="submit" class="converter">Converter</button></p>
-            </form>
-
-        <div class="valorConvertido">
-            <h3>Resultado (BTC):</h3><br>
-            <span id="resultado"></span>
-        </div>
+            <input  type="text" id="inputMoeda" placeholder="Digite o valor em Reais:" value=""/>
+            <p><button id="converter">Converter</button></p>
+            <div id="valorConvertido">
+                <h3>Resultado:</h3>
+                <span id="resultado" class="resultado"></span>
+            </div>
 
     </div>
 
