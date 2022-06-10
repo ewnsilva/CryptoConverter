@@ -1,13 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
 body {
     background-image:  linear-gradient(0deg,rgb(66, 103, 69),white);
     height: 120vh;
     color: black;
-    font-family: bolder 50pt arial;
+    font-family: 'Roboto Mono', monospace;
     text-align: center;
+    
+}
 
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+h1 {
+    margin: 0 25px;
+}
+
+img {
+    width: 100px;
+}
+
+input {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 240px;
+    height: 30px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 button {
+    transition: background 0.3s, width 0.3s;
     background-color: rgb(66, 103, 69);
     text-align: center;
     color: white;
@@ -16,25 +52,26 @@ button {
     width: 250px;
     height: 50px;
     cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    
 }
 
 button:hover {
-    background-color: black;
+    background: linear-gradient(0deg, rgba(66,103,69,1) 23%, rgba(129,181,134,1) 66%, rgba(201,230,196,1) 100%);
+    width: 260px;
 }
 
-input {
-    background-color: white;
-    text-align: center;
-    color: black;
-    border-radius: 10px;
-    width: 240px;
-    height: 30px;
+h3 {
+    font-size: 25px;
 }
 
 .resultado {
-    background-color: white;
-    color: black;
     text-align: center;
+    font-size: 40px;
     border-radius: 5px;
-    font: bolder 25pt arial;
+}
+
+.date {
+    font-size: 20px;
 }

@@ -7,12 +7,22 @@ function valorConvertido(){
     resultado.innerHTML = "";
     const btc = 364148.54;
 
-    if(isNaN(inputMoeda)){
-        window.alert("Somente números.") 
-        }else if(inputMoeda === ''){
+    if(inputMoeda === ''){
         window.alert("Insira o valor a ser convertido.")
-        }
-    inputMoeda = parseFloat(inputMoeda) / btc;
-    resultado.innerHTML = inputMoeda + " BTC"
-    return
+    }else {
+        inputMoeda = inputMoeda / btc;
+        
+        const title = document.createElement("h3")
+        title.innerText = "Resultado:"
+        const date = document.createElement("span")
+        date.classList.add("date")
+        date.innerText = "Data de cotação: 02 de Novembro de 2021, 12:59 (Brasília)"
+        
+        const money = document.createElement("p")
+        money.innerText = inputMoeda + " BTC"
+        
+        resultado.appendChild(title)
+        resultado.appendChild(money)
+        resultado.appendChild(date)
     }
+}

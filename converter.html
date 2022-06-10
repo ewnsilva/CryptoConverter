@@ -13,23 +13,20 @@
 
 <body>
 
-    <div id="cryptoConverter">
+    <header>
+        <img id="brasil" src="imagens/brasil.png" alt="Imagem do Brasil">
+        <h1 id="titulo">Bem vindo ao CryptoConverter</h1>
+        <img id="bitcoin" src="imagens/bitcoin.png" alt="Imagem do Bitcoin">
+    </header>
 
-        <div id="dados"> 
-            <h1>Ola, Mundo!</h1>
-            <div id="abertura">
-                <img id="brasil" src="imagens/brasil.png" alt="Imagem do Brasil">
-                <h1 id="titulo">Bem vindo ao CryptoConverter</h1>
-                <img id="bitcoin" src="imagens/bitcoin.png" alt="Imagem do Bitcoin">
-            </div>  
-            <h2>Insira o valor desjado (BRL):</h2>
-            <input  type="text" id="inputMoeda" placeholder="Digite o valor em Reais:" value=""/>
-            <p><button id="converter">Converter</button></p>
-            <div id="valorConvertido">
-                <h3>Resultado:</h3>
-                <span id="resultado" class="resultado"></span>
-            </div>
+    <div>
+        <h2>Insira o valor desjado (BRL):</h2>
+        <input  type="number" id="inputMoeda" placeholder="Digite o valor em Reais:" value=""/>
+        <button id="converter">Converter</button>
+    </div>
 
+    <div id="valorConvertido">
+        <span id="resultado" class="resultado"></span>
     </div>
 
     <script src="conversor.js"></script>
